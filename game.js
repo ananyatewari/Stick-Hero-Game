@@ -28,7 +28,7 @@ let score = 0;
 // let windowQuery = window.innerWidth
 
 const canvasWidth = window.innerWidth;
-const canvasHeight = window.innerHeight - 700;
+const canvasHeight = window.innerHeight - 1000;
 const GamePlatformHeight = 100;
 const CharacterDistanceEdge = 10;
 const paddingX = 100;
@@ -236,6 +236,22 @@ window.addEventListener("keyup", function (event){
         introductionMessage.style.visibility = "hidden"
     }
 });
+
+window.addEventListener ("touchstart", function (event){
+    if (phase === "waiting"){
+        lastTimestamp = undefined;
+        phase = "stretching";
+        window.requestAnimationFrame(animate);
+        introductionMessage.style.visibility = "hidden"
+    }
+})
+
+window.addEventListener ("touchend", function (event) {
+    if (phase === "stretching"){
+        phase = "turning";
+        introductionMessage.style.visibility = "hidden"
+    }
+})
 
 
 restartButton.addEventListener('click', function(event){

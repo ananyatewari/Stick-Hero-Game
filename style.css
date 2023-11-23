@@ -615,18 +615,19 @@ div#perfect-area-message {
         overflow: hidden;
     }
     section#intro-graphics{
-        bottom: -150vh;
+        bottom: -180vh;
         left: 40vw;
-        transform: scale(3);
+        transform: scale(2.7);
         top: 130vh;
         /* width: 70vw; */
     }
     section#intro-graphics img#intro-hero{
         width: 35vw;
+        /* height: 10vw; */
     }
     section#intro-graphics img#intro-block{
         width: 35vw;
-        height: 60vh;
+        height: 90vh;
     }
     section#intro-text {
         transform: scale(1.7);
@@ -680,7 +681,18 @@ div#perfect-area-message {
     }
     section#enter-name {
         line-height: 9vh;
+        position: relative;
+        top: -10vh;
     }
+    div#credits {
+       font-size: 10vh;
+    }
+    div#credits-popup {
+        width: 80vw;
+        font-size: 4vh;
+    }
+
+
 
  
 }
