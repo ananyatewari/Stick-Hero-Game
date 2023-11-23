@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Hero | Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/unnamed.png" type="image/x-icon">
+</head>
+<body>
+    <div id="score-time">
+        <div id="score-board">
+            <span id="score">0</span>
+        </div>
+        <div id="timer">
+            <span id="time-count">60</span>s
+        </div>
+    </div>
+    <div id="introduction">Hold down the mouse to stretch out a stick</div>
+
+
+    <div id="end-message" style="display: none;">
+        <div id="end-text"></div>
+        <span id="restart">RESTART</span>
+
+        <span id="home-option" style="font-size: 9vh; cursor: pointer;"> &#127968;</span>
+    </div>
+
+
+    <div id="perfect-area-message" style="visibility: hidden;">
+        
+    </div>
+    
+    <canvas id="canvas-area"></canvas>
+
+
+    <script src="./game.js"></script>
+</body>
+</html>

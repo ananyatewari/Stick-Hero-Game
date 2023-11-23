@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/unnamed.png" type="image/x-icon">
+</head>
+<body>
+
+<section>
+    <section id="intro-graphics">
+        <img src="assets/hero.png" alt="intro-hero" id="intro-hero">
+        <img src="assets/block.png" alt="block" id="intro-block">
+    </section>
+
+    <section id="text-content">
+        <section id="intro-text" style="display: none;">
+            <h1>STICK <br> HERO</h1>
+            <div id="play-now">PLAY NOW</div> <br>
+            <div id="about">ABOUT THE GAME</div>
+        </section>
+
+        <section id="rules1" style="display: none;">
+
+            <div>
+                Inspired from the original game itself, "Stick Hero" is an engaging and addictive 2D platformer game that challenges players to navigate a dynamic world of platforms and gaps using a unique and extendable stick. In this thrilling adventure, players take control of a nimble stick figure hero with the ability to elongate a stick at will. The objective is simple yet requires precision and timing i.e. extend the stick to bridge the gaps between platforms and reach new heights. 
+            </div>
+            <div>
+                <h1>INSTRUCTIONS</h1>
+                <span id="objective">Objective:</span>
+                <ul>
+                    <li id="instruction1">Extend the stick to bridge the gaps between platforms and reach higher levels.</li>
+                </ul>
+                <span id="controls">Controls:</span>
+                <ul>
+                    <li id="instruction2">Hold down the mouse/Press down any key to start extending the stick</li>
+                    <li id="instruction3">Release to stop extending the stick</li>
+                </ul>
+            </div>
+
+            <div id="more">MORE &gt; &gt;</div>
+
+        </section>
+
+        <section id="rules2" style="display: none;">
+
+            <h2>Platform Navigation:</h2>
+
+            <ul>
+                <li>Time the stick extension to bridge the gap between platforms.</li>
+                <li>Successfully land the extended stick on the next platform to continue.</li>
+            </ul>
+
+            <h2>Game Over:</h2>
+
+            <ul>
+                <li>If the stick falls short and doesn't reach the next platform, the game ends. </li>
+                <li>Falling off the platforms at any point ends the game. You will have 60 seconds to do your magic</li>
+
+            <h2>Restart:</h2>
+                <li>After a is game over, players have the option to restart and try again.</li>
+            </ul>
+
+            <div id="start-playing">START PLAYING</div>
+            <div id="back-home">BACK TO HOME</div>
+
+        </section>
+    </section>
+
+    <section id="enter-name" style="display: none;">
+    <form>
+        <label for="name-value">Enter your name</label> &nbsp;
+        <div id="player-name">
+        <input type="text" name="name" id="name-value" required> 
+        </div>
+        <br> <br><br>
+        <label for="nickname-value">Enter your nick-name </label> &nbsp;
+        <div id="player-nickname">
+        <input type="text" name="name" id="nickname-value" required> 
+        </div>
+        <br>
+        <input type="button" id="start-game" value="START >>">
+    </form>
+    </section>
+
+    <div id="made-by">
+        A game made by -
+        Ananya Tewari &#x1F60A;
+    </div>
+
+    <div id="credits">
+        &#8505;
+    </div>
+
+    <div id="popup-hover" style="display: none;">
+        Click here for more info
+    </div>
+
+    <div id="credits-popup" style="display: none;">
+        This project draws inspiration from the game, <b>'Stick Hero'</b> and also takes cues from an insightful tutorial. The engaging gameplay mechanics of Stick Hero served as a foundation, and the tutorial provided invaluable guidance in bringing this project to life. You can find the original tutorial <span><a href="https://www.youtube.com/watch?v=eue3UdFvwPo" target="_blank">here</a></span>
+    </div>
+    <div id="close-popup" style="display: none;"></div>
+
+
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    overflow: hidden ;
+    background-image: url("./assets/bgbg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body section {
+    display: flex;
+}
+
+section#intro-graphics {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+    margin-top: 25vh;
+    position: relative;
+}
+
+section#intro-graphics img#intro-hero {
+    height: 30vh;
+    width: 18vw;
+    position: relative;
+    right: 3.3vw;
+    bottom: -4vw;
+}
+
+section#intro-graphics img#intro-block {
+    width: 13vw;
+    height: 50vh;
+    position: relative;
+    bottom: -4vw;
+}
+
+section#intro-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section#intro-text {
+    padding: 20vh;
+    padding-left: 25vh;
+}
+
+section#intro-text h1 {
+    font-size: 15vh;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    line-height: 120px;
+    margin-bottom: 1vh;
+}
+
+section#intro-text div#play-now {
+    padding: 1.5vh;
+    border-radius: 10vh;
+    font-size: 3.7vh;
+    background-color: #ffffff5e;
+    color: #ffffff;
+    border: 2px solid white;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    cursor: pointer;
+    font-weight: 800;
+    margin-bottom: 0vh;
+    animation: breathing 2s ease-out infinite normal;
+}
+
+section#rules2 div#start-playing {
+    padding: 1.5vh;
+    border-radius: 10vh;
+    font-size: 2.5vh;
+    background-color: #ffffff4a;
+    color: #ffffff;
+    border: 2px solid white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    cursor: pointer;
+    font-weight: 800;
+    text-align: center;
+    width: fit-content;
+    margin-top: 6vh;
+    position: relative;
+    left: 15vw;
+    animation: breathing 2s ease-out infinite normal;
+}
+
+section#intro-text div#play-now:hover{
+    transform: scale(1.07);
+    transition-duration: 0.8s;
+    font-size: 3.9vh;
+    animation-play-state: paused;
+}
+
+section#rules2 div#start-playing:hover {
+    font-size: 2.7vh;
+    transform: scale(1.07);
+    transition-duration: 0.8s;
+    animation-play-state: paused;
+}
+
+section#intro-text div#play-now:not(:hover),  section#rules2 div#start-playing:not(:hover){
+    transition-duration: 0.9s;
+}
+
+section#intro-text div#play-now:active, section#rules2 div#start-playing:active {
+    transform: translateX(2px);
+    transform: translateY(3px);
+}
+
+section#intro-text div#about, section#rules2 div#back-home{
+    font-weight: 900;
+    color: white;
+    font-style: oblique;
+    text-shadow: 2px 2px 8px black;
+    margin-top: 1.5vh;
+}
+
+section#rules2 div#back-home {
+    position: relative;
+    left: 17.6vw;
+}
+
+section#intro-text div#about:hover, section#rules2 div#back-home:hover{
+    text-decoration: overline;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    animation-play-state: paused;
+
+}
+
+section#intro-text div#about:not(:hover), section#rules2 div#back-home:not(:hover) {
+    transition-duration: 0.7s;
+}
+
+div#made-by {
+    position: absolute;
+    top: 92vh;
+    left: 88vw;
+    /* margin-top: 99vh;
+    margin-left: 99vw; */
+    color: white;
+    background-color: #f0f8ff33;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+section#rules1 div:nth-of-type(1) {
+    text-align: justify;
+    background-color: #ffffff5c;
+    padding: 2vh;
+    border-radius: 40px;
+    border: 2px solid white;
+    width: 60vw;
+    margin-top: 10vh;
+    margin-left: -5vh;
+}
+
+section#rules1 div:nth-of-type(2) h1 {
+    margin-top: 6vh;
+    font-size: 3.5vh;
+    text-decoration: underline;
+    margin-bottom: 2vh;
+}
+
+section#rules1 div:nth-of-type(2) span#objective {
+    font-size: 2.2vh;
+    font-weight: 900;
+    margin-top: 16vh;
+}
+
+section#rules1 div:nth-of-type(2) li#instruction1 {
+    text-align: left;
+    margin-top: 0.8vh;
+    position: relative;
+    left: 6vw;
+    margin-bottom: 1vh;
+}
+
+section#rules1 div:nth-of-type(2) span#controls {
+    font-size: 2.2vh;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 10vh;
+}
+
+section#rules1 div:nth-of-type(2) li#instruction2 {
+    text-align: left;
+    position: relative;
+    left: 6vw;
+    margin-top: 1vh;
+}
+
+section#rules1 div:nth-of-type(2) li#instruction3 {
+    text-align: left;
+    position: relative;
+    left: 6vw;
+    margin-top: 0.8vh;
+}
+
+section#rules1 div:nth-of-type(3) {
+    color: white;
+    background-color: #ffffff77;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1.5px solid white;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 7vw;
+    margin-top: 5vh;
+    animation: breathing 2s ease-out infinite normal;
+}
+
+section#rules1 div:nth-of-type(3):hover {
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+    animation-play-state: paused;
+}
+
+section#rules1 div:nth-of-type(3):not(:hover) {
+    transition-duration: 0.7s;
+    
+}
+
+section#rules1 div:nth-of-type(3):active {
+    transform: translateX(2px);
+    transform: translateY(3px);
+}
+
+section#rules2 {
+    margin-top: 22vh;
+    margin-left: 2vw;
+}
+
+section#rules2 h2 {
+    font-size: 2.2vh;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 1vh;
+}
+
+section#rules2 li {
+    position: relative;
+    left: 6vw;
+    margin-top: 1vh;
+}
+
+section#enter-name {
+    margin-top: 25vh;
+    /* display: inline; */
+    text-align: left;
+    margin-left: 1vw;
+}
+
+section#enter-name div {
+    display: inline;
+}
+
+section#enter-name input {
+    position: relative;
+    bottom: 1.1vh;
+}
+
+section#enter-name input#start-game {
+    background-color: #365d36;
+    color: white;
+    width: 8vw;
+    font-size: 2.7vh;
+    padding: 1.6vh;
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin-left: 25vh;
+    cursor: pointer;
+    animation: breathing 2s ease-out infinite normal;
+    box-shadow: none;
+
+}
+  
+@keyframes breathing {
+    0% {
+      transform: scale(0.9);
+    }
+  
+    25% {
+      transform: scale(1);
+    }
+  
+    60% {
+      transform: scale(0.9);
+    }
+  
+    100% {
+      transform: scale(0.9);
+    }
+}
+  
+section#enter-name input#start-game:hover {
+    transform: scale(1.09);
+    transition-duration: 0.5s;
+    animation-play-state: paused;
+
+}
+
+section#enter-name input#start-game:not(:hover) {
+    transition-duration: 1s;
+}
+
+section#enter-name input#start-game:active {
+    transform: translateX(2px);
+    transform: translateY(3px);
+}
+
+input#name-value, input#nickname-value {
+    background-color: #ffffff74;
+    border: 2px solid white;
+    height: 4vh;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+label {
+    font-size: 5vh;
+    font-weight: 900;
+}
+
+div#credits {
+    background-color: #ffffff84;
+    border-radius: 3vh;
+    /* height: 3vw; */
+    /* width: 3vw; */
+    padding: 1vh;
+    padding-left: 1.2vh;
+    padding-right: 1.2vh;
+    position: absolute;
+    top: 92vh;
+    /* left: 0.5vw; */
+    /* margin-bottom: 5vh; */
+    margin-left: 0.5vw;
+    font-size: 3vh;
+    cursor: progress;
+}
+
+div#popup-hover {
+    background-color: rgb(238, 74, 74);
+    height: fit-content;
+    position: absolute;
+    bottom: 9vh;
+    left: 2vw;
+    border-radius: 3vh 3vh 3vh 0vh;
+    padding: 2vh;
+    font-weight: 500;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 5px 1px 10px rgb(255, 255, 255);
+}
+
+div#credits-popup {
+    background-color:rgb(255, 255, 255);
+    height: fit-content;
+    border-radius: 3vh;
+    width: fit-content;
+    position: absolute;
+    padding: 2vw;
+    z-index: 3;
+    margin: 18vw;
+    top: 2vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#credits-popup span {
+    text-decoration: none;
+    font-style: oblique;
+    color: black;
+}
+
+div#close-popup {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: #0000009a;
+}
+
+
+/* new page css */
+div#score-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#score-time div {
+    background-color: #ffffff;
+    padding: 1.4vh;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    margin: 3vh;
+    font-size: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#introduction {
+    text-align: center;
+    font-weight: 900;
+    font-size: 4vh;
+    animation: fadein 2.5s infinite normal;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+canvas {
+    position: relative;
+    /* bottom: 10vh; */
+}
+
+span#restart {
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    color: black;
+    height: fit-content;
+    margin: 0vh 50vw 0vh 50vw;
+    padding: 2vh;
+    font-weight: 900;
+    font-size: 3vh;
+    border-radius: 1vh;
+    box-shadow: 1vh 1vh 8vh #ea4646;
+}
+
+span#restart:hover {
+    transform: translateX(2px);
+    transform: translateY(3px);
+    background-color: #ea4646;
+    color: white;
+    box-shadow: 1vh 1vh 8vh #ffffff;
+}
+
+div#perfect-area-message {
+    position: absolute;
+    font-family: cursive;
+    font-size: 5vh;
+    text-align: center;
+    margin: 0vh 50vw 90vh 50vw;
+    width: fit-content;
+    height: 2vh;
+    font-weight: 900;
+    animation: appear 2s ease initial;
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(1, 1);
+      }
+    /* 50% {
+        transform: scale(1.5,1.5);
+    }
+    75% {
+        transform: scale(1,1);
+    } */
+
+    100% {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+#end-message {
+    background-color: rgba(0, 0, 0, 0.604);
+    width: 60vw;
+    text-align: center;
+    padding: 5vh;
+    margin-left: 18vw;
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    line-height: 5vh;
+    font-size: 3vh;
+    border-radius: 0vh 5vh 0vh 5vh;
+    z-index: 7;
+}
+
+#end-text {
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 1px 1px 10px gold;
+    }
+    25% {
+        text-shadow: 1px 1px 10px white;
+    }
+    75% {
+        text-shadow: 1px 1px 10px gold;
+    }
+    100% {
+        text-shadow: 0px 0px 10px white;
+    }
+}
+
+@media (max-width: 1310px) {
+    body{
+        overflow: scroll;
+    }
+    div#popup-hover {
+        bottom: 1vh;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 830px){
+    body {
+        overflow: scroll;
+    }
+    #made-by {
+        width: 15vw;
+        margin-bottom: 0vh;
+    }
+    section#enter-name input#start-game{
+        width: 20vw;
+    }
+    section#enter-name {
+        line-height: 9vh;
+    }
+    canvas {
+        width: 800px;
+    }
+}
+
+@media (max-width: 831px) {
+    section#intro-graphics {
+        transform: scale(1.2);
+    }
+    #intro-text {
+        transform: scale(0.8);
+        margin-left: -10vw;
+    }
+    section#enter-name input#start-game{
+        width: 20vw;
+    }
+    section#enter-name {
+        line-height: 9vh;
+    }
+}
+
+@media (max-width: 681px){
+    #intro-text {
+        transform: scale(0.7);
+        position: relative;
+        left: 15vw;
+    }
+    section#intro-graphics {
+        transform: scale(1.4);
+        position: relative;
+        left: 15vw;
+    }
+}
+
+@media (max-width: 682px) and (min-width: 519px) {
+    div#made-by {
+        width: 35vw;
+        left: 80vw;
+        margin-right: 12vw;
+    }
+    section#intro-graphics {
+        top: 30vh;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 442px) and (max-width: 520px) {
+    section#intro-graphics {
+        transform: scale(1.6);
+        top: 30vh;
+    }
+    div#made-by {
+        transform: scale(1.1);
+        width: 30vw;
+        top: 90vh;
+        right: 12vw;
+    }
+    section#rules2 {
+        margin-left: 100vw;
+        width: 100vw;
+        height: 300vh;
+    }
+
+}
+
+@media (max-width: 443px) and (min-width: 341px){
+    body {
+        overflow: hidden;
+    }
+    section#intro-graphics{
+        bottom: -150vh;
+        left: 40vw;
+        transform: scale(3);
+        top: 130vh;
+        /* width: 70vw; */
+    }
+    section#intro-graphics img#intro-hero{
+        width: 35vw;
+    }
+    section#intro-graphics img#intro-block{
+        width: 35vw;
+        height: 60vh;
+    }
+    section#intro-text {
+        transform: scale(1.7);
+        top: 60vh;
+        left: 80vw;
+    }
+    div#made-by {
+        position: absolute;
+        top: 180vh;
+        left: 155vw;
+        width: 80vw;
+        font-size: 5vh;
+    }
+    section#rules1 div:nth-of-type(1) {
+        width: 150vw;
+        font-size: 3vh;
+    }
+    section#rules1 div:nth-of-type(2) li#instruction1,section#rules1 div:nth-of-type(2) li#instruction2, section#rules1 div:nth-of-type(2) li#instruction3{
+        font-size: 3vh;
+        width: 70vw;
+        /* margin-left: 30vw; */
+    }
+    section#rules1 div:nth-of-type(2) span#controls,section#rules1 div:nth-of-type(2) span#objective{
+        /* left: 27vw; */
+        font-size: 3.5vh;
+    }
+    section#rules1 div:nth-of-type(2) h2{
+        font-size: 4vh;
+    }
+    section#rules1 div:nth-of-type(2) {
+        margin-top: 20vh;
+        margin-left: 80vw;
+        line-height: 5vh;
+    }
+    
+    section#rules1 div#more{
+        width: 50vw;
+        height: 5vh;
+        font-size: 3vh;
+        margin-left: 80vw;
+    }
+    section#rules2 {
+        margin-left: 70vw;
+        width: 100vw;
+        position: relative;
+        top: 50vh;
+        font-size: 3vh;
+    }
+    section#enter-name input#start-game{
+        width: 80vw;
+    }
+    section#enter-name {
+        line-height: 9vh;
+    }
+
+ 
+}
+
+@media (min-width: 200px) and (max-width: 340px) {
+    body{
+        overflow: hidden;
+    }
+    section#intro-graphics {
+        height: 300vh;
+        top: 110vh;
+        width: 200vw;
+    }
+    section#intro-graphics img#intro-hero {
+        width: 50vw;
+    }
+    section#intro-graphics img#intro-block {
+        width: 52vw;
+        height: 300vh;
+    }
+    section#intro-text {
+        transform: scale(1.5);
+        top: 150vh;
+        right: 13vw;
+    }
+    div#made-by {
+        top: 200vh;
+        left: 120vw;
+        width: 100vw;
+        font-size: 5vh;
+    }
+    section#rules1 div:nth-of-type(1) {
+        width: 150vw;
+        font-size: 3vh;
+    }
+        section#rules1 div:nth-of-type(2) li#instruction1,section#rules1 div:nth-of-type(2) li#instruction2, section#rules1 div:nth-of-type(2) li#instruction3{
+        font-size: 3vh;
+        width: 70vw;
+        /* margin-left: 30vw; */
+    }
+    section#rules1 div:nth-of-type(2) span#controls,section#rules1 div:nth-of-type(2) span#objective{
+        /* left: 27vw; */
+        font-size: 3.5vh;
+    }
+    section#rules1 div:nth-of-type(2) {
+        margin-left: 35vw;
+        line-height: 5vh;
+    }
+    
+    section#rules1 div#more{
+        width: 50vw;
+        height: 5vh;
+        font-size: 3vh;
+        margin-left: 35vw;
+    }
+    section#rules2 {
+        margin-left: 55vw;
+        width: 150vw;
+        position: relative;
+        top: 100vw;
+        transform: scale(1.3);
+    }
+    section#enter-name input#start-game{
+        width: 80vw;
+    }
+    section#enter-name {
+        line-height: 9vh;
+    }
+    canvas {
+        width: 280px;
+        height: 500px;
+    }
+}
+
