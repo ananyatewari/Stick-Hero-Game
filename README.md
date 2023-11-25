@@ -12,8 +12,9 @@ Check out the live demo [here](https://ananyatewari.github.io/Stick-Hero-Game/).
 
 ### Game Preview
 
+![ezgif-3-6030a55aa0](https://github.com/ananyatewari/Stick-Hero-Game/assets/144683235/06adf7f8-60e7-4e60-8c15-108863402645)
 
-![image](https://github.com/ananyatewari/Stick-Hero-Game/assets/144683235/45fece3d-f9ff-4a69-81b0-58c87b790f08)
+
 
 
 ## Features
