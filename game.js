@@ -331,6 +331,8 @@ restartButton.addEventListener('click', function(event){
     startTimer()
     score = 0;
     scoreBox.innerText = score
+    localStorage.setItem("score",score)
+
 });
 
 //to change the colour of the blocks
