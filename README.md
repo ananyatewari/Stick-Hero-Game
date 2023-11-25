@@ -3,7 +3,7 @@ Inspired from the original game itself, "Stick Hero" is an engaging and addictiv
 
 ## Overview
 
-It's built using *HTML*, *CSS*, and *JavaScript*, and developed in Visual Studio Code. The game features a stick figure hero who must cross platforms by extending and retracting a stick. It also makes use of *Canvas* in order to generate the platforms over which the player walks. In addition to that, the game is also media responsive for various other devices.
+It's built using *HTML*, *CSS*, and *JavaScript*, and developed in Visual Studio Code. The game features a stick figure hero who must cross platforms by extending and retracting a stick. It also makes use of *Canvas* in order to generate the platforms over which the player walks. In addition to that, the game is also media responsive for various other devices. Inspiration from [here](https://www.youtube.com/watch?v=eue3UdFvwPo)
 
 ### Live Demo
 
