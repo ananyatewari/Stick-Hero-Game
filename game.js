@@ -402,6 +402,7 @@ function animateStickHero(time){
                     CharacterX = maximumhero;
                     phase = "transitioning"; //player won case
                 score++;
+                localStorage.setItem("score",score)
                 scoreBox.innerText = score;
 
                 // randomColour()
